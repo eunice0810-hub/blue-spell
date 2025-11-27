@@ -1,6 +1,8 @@
 import streamlit as st
 from spellchecker import SpellChecker
 import nltk
+nltk.download("punkt")
+nltk.download("punkt_tab")
 from nltk.tokenize import word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 import pandas as pd
