@@ -194,20 +194,21 @@ def main():
 
     # ---- 헤더 (로고 + 타이틀) ----
     st.markdown(
-        """
-        <div class="main-header">
-          <div style="display:flex; align-items:center; gap:1.0rem;">
-            <!-- 연세대 로고: 같은 폴더에 yonsei_logo.png 파일을 넣어 두세요 -->
-            <img src="yonsei_logo.png" alt="Yonsei Logo" width="46" style="border-radius: 8px; background-color:white; padding:4px;">
-            <div>
-              <h1>Blue Spell (Yonsei Edition)</h1>
-              <p>영어 텍스트 철자 교정 및 통계 분석 도구 · 여러 개의 .txt 파일을 한 번에 처리합니다.</p>
-            </div>
-          </div>
+    f"""
+    <div class="main-header">
+      <div style="display:flex; align-items:center; gap:1.0rem;">
+        <img src="https://raw.githubusercontent.com/eunice0810-hub/blue-spell/main/yonsei_logo.png"
+             alt="Yonsei Logo" width="46"
+             style="border-radius: 8px; background-color:white; padding:4px;">
+        <div>
+          <h1>Blue Spell (Yonsei Edition)</h1>
+          <p>영어 텍스트 철자 교정 및 통계 분석 도구 · 여러 개의 .txt 파일을 한 번에 처리합니다.</p>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
     ensure_nltk()
     spell = SpellChecker(language="en")
