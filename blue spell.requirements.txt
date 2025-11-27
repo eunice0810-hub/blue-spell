@@ -1,0 +1,4 @@
+streamlit
+pyspellchecker
+nltk
+pandas
