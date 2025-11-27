@@ -117,7 +117,9 @@ def main():
         page_title="Blue Spell (Yonsei Edition)",
         layout="wide",
     )
-
+    
+    ensure_nltk()
+    
     # ---- Custom CSS ----
     st.markdown(
         """
